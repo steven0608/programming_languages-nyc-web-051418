@@ -8,7 +8,7 @@ def reformat_languages(languages)
         reformatting[name][:style]=[]
       end
       reformatting[name][:style] << style
-    end  
+    end
       end
       reformatting
 end
