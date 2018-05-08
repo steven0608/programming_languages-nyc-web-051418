@@ -3,7 +3,7 @@ def reformat_languages(languages)
   reformatting={}
   languages.each do |style,lang|
     lang.each do |name,type|
-      unless reformatting[name]
+      if !reformatting[name]
         reformatting[name] = type
         reformatting[name][:style]=[]
       end
